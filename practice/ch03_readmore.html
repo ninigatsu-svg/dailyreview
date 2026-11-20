@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read more</title>
     
+    
 </head>
-<body>
+<body
+    style="
+    background-color: blanchedalmond;
+    margin:10px 20px 10px 20px ">
+
     <nav style="color: rgb(74, 39, 7);font-family: monospace;text-align: right;">
         <a href="../webpage/index.html">Home</a> |
         <a href="../webpage/about.html>">About</a> |
@@ -44,40 +49,116 @@
     But no one has stolen the show quite like Snoopy, 
     the coolest beagle on the planet.</p>
 
-<div style="margin: 50px 180px;">
-    <img height="180" src="../image/charlie.png">
-    <img height="180" src="../image/snoopyy.png">
-    <img height="180" src="../image/woodstock.png">
-    <img height="180" src="../image/sally.png">
-</div>
 
-<table style="color: rgb(74, 39, 7);font-family: monospace;text-align: center;"> 
-    <tr>
-        <th>Charactor</th>
-        <th>Gender</th>
-        <th>Age</th>
-    </tr>
-    <tr>
-        <td>Charlie</td>
-        <td>Male</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Snoopy</td>
-        <td>Male</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>Woodstock</td>
-        <td>Male</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>Sally</td>
-        <td>Female</td>
-        <td>8</td>
-    </tr>
-</table>
+<style>
+        .card-box{
+            width: 250px;
+            height: 350px;
+            border: 1px solid saddlebrown;
+            background-color: bisque;
+            
+            
+        }
+        .card-image{
+            padding: 10px 0px;
+            width: 100%;
+            height: 35%;
+            object-fit:scale-down;
+
+        }
+        .card-body{
+            padding: 0px 0px 10px 100px;
+            height: 0px;
+            font-family: monospace; 
+
+        }
+        .card-discription{
+            padding: 10px 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+            font-family: monospace;
+              /* use webkit to cut text multiline */
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+
+        }
+        .card-button{
+            margin: auto;
+            display: block;
+            padding: 5px 20px;
+            border-radius: 10px;
+            
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div style="display:flex;justify-content:space-between;">
+<div class="card-box">
+    
+    <img class="card-image" src="../image/charlie.png" alt="chalie">
+    <h3 class="card-body">Chalie</h3>
+    <p class="card-discription">Good ol’ Charlie Brown is loyal, determined, and just a bit wishy-washy. 
+        He’s a true friend, a dedicated baseball manager, and very responsible 
+        when it comes to taking care of his dog, Snoopy. Charlie Brown never 
+        gives up, even when he probably should. He is kind and patient by nature, 
+        and wears his heart on his sleeve. He likes helping others, but try as he 
+        might, he just can’t seem to help himself.</p>
+
+        <button class="card-button">Action</button>
+ 
+</div> 
+<div class="card-box">
+    
+    <img class="card-image" src="../image/snoopyy.png" alt="snoopyycard">
+    <h3 class="card-body">Snoopy</h3>
+    <p class="card-discription">Snoopy is not your average beagle. 
+        He is a book lover and a book writer. 
+        He is a collector of fine art and a root beer connoisseur. 
+        Plus, his unstoppable imagination helps keep his life anything but ordinary. </p>
+
+        <button class="card-button">Action</button>
+ 
+</div> 
+<div class="card-box">
+    
+    <img class="card-image" src="../image/woodstock.png" alt="woodstock">
+    <h3 class="card-body">Woodstock</h3>
+    <p class="card-discription">Woodstock is not a great flyer. 
+        In fact, he doesn’t even know what type of bird he is. 
+        The only thing he knows for sure is that he and Snoopy were destined to be great pals. 
+        He refers to Snoopy as his friend of friends, 
+        the only one in the neighborhood who understands his chirps. 
+        Woodstock is always up for an adventure, 
+        but is just as happy relaxing at home. </p>
+
+        <button class="card-button">Action</button>
+ 
+</div> 
+
+<div class="card-box">
+    
+    <img class="card-image" src="../image/lucy.png" alt="Lucy">
+    <h3 class="card-body">Lucy</h3>
+    <p class="card-discription">Though she’s often dismissed as simply bossy or crabby, 
+        there’s more to Lucy than strong opinions. 
+        She dispenses sound advice for just five cents and looks out for her brothers, 
+        Linus and Rerun. She’s confident, strong, and positive she’ll make a great 
+        president or queen one day. Her biggest weakness is her unrequited love for 
+        Schroeder… *sigh*. Never fall in love with a musician. </p>
+
+        <button class="card-button">Action</button>
+ 
+</div> 
+</div>
+<footer>
+    Footer
+</footer>
 
 </body>
 </html>
